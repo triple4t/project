@@ -40,7 +40,14 @@
       .floating-wpp .floating-wpp-button{position:relative;border-radius:50%;box-shadow:1px 1px 4px rgba(60,60,60,.4);transition:box-shadow .2s;cursor:pointer;overflow:hidden}
       .floating-wpp .floating-wpp-button img,.floating-wpp .floating-wpp-button svg{position:absolute;width:100%;height:auto;object-fit:cover;top:50%;left:50%;transform:translate3d(-50%,-50%,0);border-radius:50%}.floating-wpp:hover{bottom:17px}.floating-wpp:hover .floating-wpp-button{box-shadow:1px 2px 8px rgba(60,60,60,.4)}.floating-wpp .floating-wpp-popup{border-radius:6px;background-color:#E5DDD5;position:absolute;overflow:hidden;padding:0;box-shadow:1px 2px 8px rgba(60,60,60,.25);width:0;height:0;bottom:0;opacity:0;transition:bottom .1s ease-out,opacity .2s ease-out;transform-origin:bottom}.floating-wpp .floating-wpp-popup.active{padding:0 12px 12px;width:260px;height:auto;bottom:82px;opacity:1}.floating-wpp .floating-wpp-popup .floating-wpp-message{background-color:#fff;padding:8px;border-radius:0 5px 5px;box-shadow:1px 1px 1px rgba(0,0,0,.15);opacity:0;transition:opacity .2s}.floating-wpp .floating-wpp-popup.active .floating-wpp-message{opacity:1;transition-delay:.2s}.floating-wpp .floating-wpp-popup .floating-wpp-head{text-align:right;color:#fff;margin:0 -15px 10px;padding:6px 12px;display:flex;justify-content:space-between;cursor:pointer}.floating-wpp .floating-wpp-input-message{background-color:#fff;margin:10px -15px -15px;padding:0 15px;display:flex;align-items:center}.floating-wpp .floating-wpp-input-message textarea{border:1px solid #ccc;border-radius:4px;box-shadow:none;padding:8px;margin:10px 0;width:100%;max-width:100%;font-family:inherit;font-size:inherit;resize:none}.floating-wpp .floating-wpp-btn-send{margin-left:12px;font-size:0;cursor:pointer}
 
-    
+      @media screen and (max-width: 750px) {
+  .gmail{
+    visibility: hidden;
+  }
+  .marginclass {
+    margin: 0 0;
+  }
+}
   </style>
   
 
@@ -67,7 +74,7 @@
 <!-- </div> -->
  
 
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="border-radius: 10px; 
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark marginclass" style="border-radius: 10px;margin: 0 142px; 
   ">
     <a class="navbar-brand" href="#" style="padding-left: 58px;"><img src="assets/img/images/logo2.png" width="90px" height="50px"  alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,9 +93,9 @@
         </li>
       </ul>
 
-      <a href=""><img src="assets/img/images/gmail.png" style="padding-left: 0px; padding-right: 10px;" width="50px" alt=""></a>
+      <a class="gmail" href=""><img src="assets/img/images/gmail.png" style="padding-left: 0px; padding-right: 10px;" width="50px" alt=""></a>
       <div class="whatsapp" style="margin-left: 0; padding-right: 10px; ">
-        <a href=" https://wa.me/917507693344" target="_blank">
+        <a class="gmail" href=" https://wa.me/917507693344" target="_blank">
           <img src="assets/img/1384055.png" alt="">
         </a>
       </div>
@@ -97,7 +104,7 @@
     
   </nav>
   <!-- diagonal hero -->
-  <section class="diagonal-section-bottom bg-contrast-lower bg-opacity-50%" style="background-image: url('assets/img/images/img5.jpg'); width" data-theme="dark">
+  <section class="diagonal-section-bottom bg-contrast-lower bg-opacity-50%" style="background-image: url('assets/img/images/img5.jpg');" data-theme="dark">
     <div class="container max-width-adaptive-sm padding-y-xxl">
       <div class="text-center">
         <div class="text-sm opacity-90% margin-bottom-xxs">Welcome</div>
@@ -372,7 +379,7 @@
         <div class="col-5@md">
           <div class="text-component">
             <p class="text-sm color-contrast-medium">What we provide?</p>
-            <h1 style="color: white; font-size:1.5rem;">Web Developement,App Developement</h1>
+            <h1 style="color: white;">Web Developement,App Developement</h1>
             <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, rem neque doloribus impedit explicabo.</p> -->
           </div>
   
